@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kevin Hong</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<!--<script scr="index/angular-route.js"></script>-->
+	<script src="index/js/angular-ui-router.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="index/js/json-data.js"></script>
+	<script src="index/js/index.js"></script>
+	<script src="index/js/contact.js"></script>
+	<script src="index/js/projects.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="index/index.css">
+
+</head>
+<body ng-app="indexPage">	
+	<header>
+		<div class="banner">
+			<div class="row">
+				<div class="title col-md-4">
+				<span><a ui-sref="home">Kevin Hong</a></span>
+			</div>
+			<div class="nav-bar col-md-8">
+				<ul class="nav nav-tabs">			
+					<li><a ui-sref="home">Home</a></li>
+					<li><a ui-sref="resume">Resume</a></li>
+					<li><a ui-sref="projects"">Projects</a></li>
+					<li><a ui-sref="contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header> 
+	<div class="container">
+		<div class="content ui-view-controller" style="padding-left:15px; padding-right:15px;">
+			<br>	
+			<div ui-view></div>
+		</div>
+	</div>
+</body>
+<footer>
+	<div class="footer-container row">
+		<div id="call" class="row col-md-3">
+			<div class="col-sm-2">
+				<img src="/index/photo/phone.png" alt="phone-icon" class="icon img-circle">
+			</div>
+			<div class="col-sm-10">
+				<span><strong>Call:</strong></span><br>
+				<span>MOB: (562) 347-8586</span>
+			</div>
+		</div>
+
+		<div id="contact" class="row col-md-3">
+			<div class="col-sm-2">
+				<img src="index/photo/mail.png" alt="mail-icon" class="icon img-circle">
+			</div>
+			<div class="col-sm-10">
+				<span><strong>Contact</strong></span><br>
+				<address><a href="mailto:hong.w.kevin@gmail.com">hong.w.kevin@gmail.com</a><address>
+			</div>
+		</div>
+		
+		<div id="follow-me" class="col-md-3 row">
+			<div class="col-sm-2">
+				<img src="index/photo/follow.jpg" alt="plus-icon" class="icon img-circle">
+			</div>
+			<div class="col-sm-10">
+				<span><strong>Follow Me</strong></span><br>
+				<a href="http://www.linkedin.com/pub/kevin-hong/63/94b/71b/"><img src="index/photo/linked_in.png" alt="linkedin" style="height:40px; width:40px;"></a>
+			</div>
+		</div>
+		<div id="copyright" class="col-md-3 row">
+			<div class="col-sm-2">
+				<img src="index/photo/copyRight.png">
+			</div>
+			<div class="col-sm-10">
+				<span><strong>Written By:</strong></span><br>
+				<span>Kevin Hong</span>
+			</div>
+		</div>
+		
+	
+	</div>
+</footer>
+</html>

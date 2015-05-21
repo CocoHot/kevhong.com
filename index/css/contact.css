@@ -1,0 +1,16 @@
+.form-container label {
+	margin-top: 10px;
+}
+
+.form-container input{
+	width:350px;
+}
+
+.form-container textarea{
+	width:400px;
+	height:250px;
+}
+
+.form-container .help-inline{
+	color:red;
+}

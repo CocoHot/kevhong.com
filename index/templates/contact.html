@@ -1,0 +1,40 @@
+<!-- Contact tab -->
+<link rel="stylesheet" href="index/css/contact.css">
+<div class="contact" ng-controller="ContactController">
+	<div class="row">
+		<div class="col-sm-5">
+			<h1 class="page-title">CONTACT</h1>
+		</div>
+		<div class="col-sm-7">
+			<form novalidate name="contactForm" class="well form-container">
+				
+				<label>Name</label><br>
+				<input ng-model="form.name" name="name" type="text" class="span6" placeholder="Your name" required/>
+				<span ng-show="contactForm.name.$error.required" class="help-inline">Required</span>
+				<br>
+				
+				<label>Email Address</label><br>
+				<input ng-model="form.email" name="email" type="email" class="span6" placeholder="abc@xyz.com" required />
+				<span ng-show="contactForm.email.$error.required" class="help-inline">Required</span>
+				<span ng-show="contactForm.email.$error.email" class="help-inline">Invalid</span>
+				<br>
+				
+				<div class="control-group">
+					<label class="control-label" for="message">Message</label><br>
+					<div class="controls">
+						<textarea ng-model="form.message" name="message" class="input-xlarge span11" id="message" row="10" required></textarea>
+					</div>
+					<span ng-show="contactForm.message.$error.required" class="help-inline">Required</span>
+				</div>
+				<br>
+				
+				<div class="form-actions">
+					<button ng-click="sendForm()" ng-disabled="contactForm.$invalid" class="btn btn-primary" >Send Message &raquo;</button>
+					<button ng-click="resetForm()" class="btn">Reset</button>
+				</div> 
+					
+			</form>
+		</div>
+	</div>
+	<br><br>
+</div>

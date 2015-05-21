@@ -1,0 +1,28 @@
+<!-- Skill and projects page -->
+<link rel="stylesheet" href="index/css/projects.css">
+<div class="project" ng-controller="ProjectController">
+	<h1 class="page-title">PROJECTS</h1>
+	<div class="row list-field">
+		<div class="single-project" ng-repeat="project in projects">
+			
+			<div class="col-sm-6 project-pic">
+				<a ng-href="{{project.url}}"><img ng-src="{{project.picURL}}" alt="{{project.title}}"></a>
+			</div>
+			
+			<div class="col-sm-3 project-mid">
+				<h3 class="project-title"><a ng-href="{{project.url}">{{project.title}}</a></h3>
+				<h4><strong>Description:</strong></h4>
+				<span>{{project.description}}</span>
+			</div> 
+			
+			<div class="col-sm-3 project-tech">
+				<br>
+				<h4><strong>TECH USE:</strong></h4>
+				<ul class="tech-ul">
+					<li class="tech-li" ng-repeat="tech in project.tech">{{tech}}</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>

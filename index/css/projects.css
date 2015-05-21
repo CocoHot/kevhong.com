@@ -1,0 +1,32 @@
+.single-project .project-title a:link{
+	color: #616161;
+}
+.single-project .project-title a:hover{
+	color: #616161;
+}
+.project-pic a img{
+	width:100%;
+	height:100%;
+	margin-top:10px;
+}
+
+.single-project{
+	height:300px;
+	background-color:lightgray;
+	border:2px solid lightgray;
+	margin-top:15px;
+}
+
+.single-project span{
+	width:100%;
+}
+
+.single-project .project-tech ul li{
+}
+
+.project-mid h4{
+	margin-top: 20px;
+}
+.list-field{
+	display:inline-block;
+}
